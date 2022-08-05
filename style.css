@@ -1,30 +1,142 @@
-nav{
+html,body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.the-header{
+    width: 100%;
+    height: 100vh;
+    background-image:  url("img.jpg");
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.the-nav {
     display: flex;
     justify-content: space-between;
-    background-color:black;
-    color: white;
+    color:black;
+    position: fixed;
+    top:0;
+    width: 100%;
+   
 }
-ul {
+.the-ul {
     list-style-type: none;
-    margin: 0;
+    margin: 20;
     padding: 0;
     overflow: hidden;
+    float: left;
    
     font-weight: 400;
   }
  
-  li {
+  .the-ul li {
     float: left;
    }
   
-  li a {
+  .the-ul li a {
     display: block;
-  color: white;
+  color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+   font-weight: bolder;
+   font-size: 21px;
+    text-decoration: underline;
   }
   
-  li a:hover {
-  color: red;
+  .the-ul li a:hover {
+  color: antiquewhite;
   }
+  .img-head{
+    border-radius: 150PX;
+    width: 300;
+    margin: 20;
+    margin-left: 0px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+.img-head:hover{
+	margin-left: 100px;
+}
+
+.main-btn{
+    background-color: rgb(219, 198, 198);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30PX;
+    font-family:roboto;
+    font-size: 21px;
+    font-weight: 600;
+    transition: all 300ms;
+}
+.main-btn:hover{
+    background-color: antiquewhite;
+}
+.the-head{
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+}
+.header-title{
+    font-family: roboto;
+    font-weight: bolder;
+    font-size: 48px;
+}
+#description{
+    background-color:antiquewhite;
+}
+
+section{
+    height:100vh;
+    padding-top: 20px;
+}
+
+section>p{
+    text-align: center;
+    font-family: Gotham;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.desc{
+  display: flex;
+   
+}
+.img-des{
+    border-radius: 200%;
+    height: 400px;
+    width: 350px;
+    MARGIN: 60px;
+    border: solid;
+}
+
+.p-desc{
+margin: 60px;
+}
+#SKILLS{
+   
+    background-color: rgb(235, 153, 76);
+}
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+   
+}
+
+.p-skill{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30;
+    background-color: antiquewhite;
+    
+}
+#CONTACT{
+    
+}
